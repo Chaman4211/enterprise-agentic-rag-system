@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+<title id="title">Enterprise Agentic RAG System — animated target architecture</title>
+<desc id="desc">Planned six-week architecture showing document ingestion, preprocessing, chunking, embeddings, ChromaDB, LangGraph orchestration, retrieval grading, query rewriting, tools, LLM generation and FastAPI streaming.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#081426"/><stop offset="1" stop-color="#171333"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#123b70"/><stop offset="1" stop-color="#155e75"/></linearGradient>
+  <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#422080"/><stop offset="1" stop-color="#6d28d9"/></linearGradient>
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#14532d"/><stop offset="1" stop-color="#047857"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#60a5fa"/></marker>
+  <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#34d399"/></marker>
+  <style>
+    text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#e5eefb}
+    .heading{font-size:30px;font-weight:700;letter-spacing:.3px}
+    .sub{font-size:15px;fill:#9fb2ce}
+    .section{font-size:17px;font-weight:700;letter-spacing:2px;fill:#93c5fd}
+    .node{stroke:#52749c;stroke-width:1.5;rx:18}
+    .nodeTitle{font-size:19px;font-weight:700;text-anchor:middle}
+    .nodeSub{font-size:14px;fill:#c3d2e6;text-anchor:middle}
+    .edge{fill:none;stroke:#60a5fa;stroke-width:3;stroke-linecap:round;marker-end:url(#arrow);stroke-dasharray:10 13;animation:flow 2.1s linear infinite}
+    .edgeGreen{fill:none;stroke:#34d399;stroke-width:3;stroke-linecap:round;marker-end:url(#arrowGreen);stroke-dasharray:10 13;animation:flow 2.1s linear infinite}
+    .edgeSoft{fill:none;stroke:#a78bfa;stroke-width:2.6;stroke-linecap:round;marker-end:url(#arrow);stroke-dasharray:8 12;animation:flow 2.6s linear infinite}
+    .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.8s ease-in-out infinite}
+    .delay1{animation-delay:.35s}.delay2{animation-delay:.7s}.delay3{animation-delay:1.05s}
+    @keyframes flow{to{stroke-dashoffset:-46}}
+    @keyframes pulse{0%,100%{filter:none;opacity:1}50%{filter:url(#glow);opacity:.88}}
+  </style>
+</defs>
+<rect width="1600" height="1040" rx="28" fill="url(#bg)"/>
+<circle cx="1450" cy="110" r="190" fill="#4338ca" opacity=".09"/>
+<circle cx="110" cy="930" r="220" fill="#0ea5e9" opacity=".07"/>
+<text x="70" y="72" class="heading">ENTERPRISE AGENTIC RAG SYSTEM</text>
+<text x="70" y="104" class="sub">End-to-end target architecture • Autonomous retrieval • Corrective loops • Streaming responses</text>
+<rect x="1260" y="48" width="270" height="42" rx="21" fill="#3b1f65" stroke="#a78bfa"/>
+<text x="1395" y="75" font-size="14" font-weight="700" text-anchor="middle" fill="#ddd6fe">PLANNED SIX-WEEK TARGET</text>
+<text x="70" y="165" class="section">01 / KNOWLEDGE INGESTION &amp; INDEXING</text>
+<!-- data pipeline nodes -->
+<g class="pulse"><rect class="node" x="65" y="195" width="245" height="112" fill="url(#blue)"/><text class="nodeTitle" x="187" y="240">Knowledge Sources</text><text class="nodeSub" x="187" y="270">ArXiv • Technical Docs • Wiki</text></g>
+<g class="pulse delay1"><rect class="node" x="365" y="195" width="245" height="112" fill="url(#green)" stroke="#34d399"/><text class="nodeTitle" x="487" y="240">Ingestion &amp; Cleaning</text><text class="nodeSub" x="487" y="270">Validation • Normalization</text></g>
+<g class="pulse delay2"><rect class="node" x="665" y="195" width="245" height="112" fill="url(#blue)"/><text class="nodeTitle" x="787" y="240">Semantic Chunking</text><text class="nodeSub" x="787" y="270">Context-aware text segments</text></g>
+<g class="pulse delay3"><rect class="node" x="965" y="195" width="245" height="112" fill="url(#violet)"/><text class="nodeTitle" x="1087" y="240">Embedding Model</text><text class="nodeSub" x="1087" y="270">Vector representations</text></g>
+<g class="pulse"><rect class="node" x="1265" y="195" width="270" height="112" fill="url(#blue)"/><text class="nodeTitle" x="1400" y="240">ChromaDB</text><text class="nodeSub" x="1400" y="270">Persistent vector index</text></g>
+<path class="edge" d="M310 251 H355"/><path class="edge" d="M610 251 H655"/><path class="edge" d="M910 251 H955"/><path class="edge" d="M1210 251 H1255"/>
+<text x="70" y="395" class="section">02 / AUTONOMOUS QUERY &amp; CORRECTIVE RETRIEVAL</text>
+<!-- agent nodes -->
+<g class="pulse"><rect class="node" x="65" y="435" width="220" height="116" fill="#123b70"/><text class="nodeTitle" x="175" y="480">User Query</text><text class="nodeSub" x="175" y="511">Question / task</text></g>
+<g class="pulse delay1"><rect class="node" x="345" y="435" width="250" height="116" fill="url(#violet)" stroke="#a78bfa"/><text class="nodeTitle" x="470" y="480">LangGraph Agent</text><text class="nodeSub" x="470" y="511">State • Routing • Decisions</text></g>
+<g class="pulse delay2"><rect class="node" x="655" y="435" width="230" height="116" fill="url(#blue)"/><text class="nodeTitle" x="770" y="480">Retriever</text><text class="nodeSub" x="770" y="511">Semantic similarity search</text></g>
+<g class="pulse delay3"><rect class="node" x="945" y="435" width="230" height="116" fill="#49300d" stroke="#fbbf24"/><text class="nodeTitle" x="1060" y="480">Relevance Grader</text><text class="nodeSub" x="1060" y="511">Evaluate retrieved context</text></g>
+<g class="pulse"><rect class="node" x="1235" y="435" width="300" height="116" fill="url(#violet)"/><text class="nodeTitle" x="1385" y="480">LLM + Tool Execution</text><text class="nodeSub" x="1385" y="511">Grounded answer • Functions</text></g>
+<path class="edge" d="M285 493 H335"/><path class="edge" d="M595 493 H645"/><path class="edge" d="M885 493 H935"/><path class="edgeGreen" d="M1175 493 H1225"/>
+<!-- vector lookup connector -->
+<path class="edgeSoft" d="M1400 307 V365 H770 V425"/>
+<text x="1085" y="357" font-size="13" fill="#c4b5fd">vector search</text>
+<!-- corrective loop -->
+<rect x="645" y="650" width="300" height="100" rx="18" fill="#30205c" stroke="#a78bfa" stroke-width="1.5"/>
+<text class="nodeTitle" x="795" y="690">Query Reformulation</text><text class="nodeSub" x="795" y="719">Corrective RAG retry loop</text>
+<path class="edgeSoft" d="M1060 551 V610 H795 V640"/>
+<path class="edgeSoft" d="M645 700 H610 V575 H770 V561"/>
+<text x="960" y="625" font-size="13" fill="#c4b5fd">low relevance</text>
+<text x="610" y="690" font-size="13" fill="#c4b5fd">retry retrieval</text>
+<!-- output row -->
+<text x="70" y="815" class="section">03 / DELIVERY &amp; OBSERVABILITY</text>
+<rect class="node" x="985" y="850" width="260" height="105" fill="url(#blue)"/>
+<text class="nodeTitle" x="1115" y="893">FastAPI Streaming</text><text class="nodeSub" x="1115" y="923">Async endpoints • SSE</text>
+<rect class="node" x="1295" y="850" width="240" height="105" fill="url(#green)" stroke="#34d399"/>
+<text class="nodeTitle" x="1415" y="893">Final Response</text><text class="nodeSub" x="1415" y="923">Answer + source context</text>
+<path class="edgeGreen" d="M1385 551 V795 H1115 V840"/>
+<path class="edgeGreen" d="M1245 902 H1285"/>
+<rect x="65" y="850" width="800" height="105" rx="18" fill="#111f36" stroke="#405777" stroke-width="1.5"/>
+<text x="95" y="890" font-size="18" font-weight="700">Evaluation &amp; Telemetry</text>
+<text x="95" y="923" class="nodeSub" text-anchor="start">Retrieval precision • Faithfulness • Latency • Traces • Error monitoring</text>
+<path class="edgeSoft" d="M470 551 V790 H465 V840"/>
+<text x="70" y="1000" font-size="13" fill="#8297b5">Status: Week 1 data ingestion and preprocessing implemented; remaining blocks are roadmap targets.</text>
+</svg>
