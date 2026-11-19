@@ -1,4 +1,4 @@
-# ⚡ Agentic RAG System
+# ⚡ Enterprise Agentic RAG System
 
 <div align="center">
 
@@ -15,7 +15,7 @@
 
 <br/>
 
-<a href="https://github.com/Chaman4211/agentic-rag-system">
+<a href="https://github.com/Chaman4211/enterprise-agentic-rag-system">
   <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/>
 </a>
 <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
@@ -31,7 +31,7 @@
 
 ## 🧠 01. Project Overview
 
-The **Agentic RAG System** is an AI engineering project developed as part of the **Parallax Labs Cohort 4 — AI/ML Engineer Internship, Track B: Autonomous Agentic Systems**.
+The **Enterprise Agentic RAG System** is an AI engineering project developed as part of the **Parallax Labs Cohort 4 — AI/ML Engineer Internship, Track B: Autonomous Agentic Systems**.
 
 The objective is to develop an enterprise-oriented Retrieval-Augmented Generation system capable of retrieving relevant information from a technical knowledge base and executing multi-step agent workflows.
 
@@ -130,6 +130,14 @@ flowchart TD
 ### Target Architecture — Complete Six-Week System
 
 The following diagram describes the planned architecture, not the current Week 1 implementation.
+
+<div align="center">
+
+<img src="docs/architecture-flow.svg" width="100%" alt="Animated architecture diagram showing the planned enterprise agentic RAG data and agent workflow"/>
+
+<sub>Animated target architecture — planned across the six-week roadmap; only the Week 1 data foundation is currently implemented.</sub>
+
+</div>
 
 ```mermaid
 flowchart TD
@@ -326,9 +334,9 @@ The following instructions describe how to set up the project on Ubuntu Linux.
 ### Step 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/Chaman4211/agentic-rag-system.git
+git clone https://github.com/Chaman4211/enterprise-agentic-rag-system.git
 
-cd agentic-rag-system
+cd enterprise-agentic-rag-system
 ```
 
 ### Step 2 — Create the Conda Environment
@@ -398,7 +406,7 @@ python3 -m pytest -v
 ## 📁 09. Repository Structure
 
 ```text
-agentic-rag-system/
+enterprise-agentic-rag-system/
 │
 ├── data/
 │   ├── raw/
