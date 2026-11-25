@@ -51,3 +51,8 @@ dist/
 *.pt
 *.pth
 *.onnx
+
+# Local vector database artifacts
+data/chroma/
+data/chroma_api_probe/
+chroma/

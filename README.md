@@ -2,15 +2,16 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=800&lines=Agentic+Retrieval-Augmented+Generation;Autonomous+AI+Systems;Building+Intelligent+Knowledge+Systems" alt="Animated project title" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=900&height=65&lines=Enterprise+Agentic+RAG+System;Autonomous+AI+%26+Knowledge+Systems;Semantic+Search+%7C+Vector+Databases;Building+Intelligent+Agentic+Workflows" alt="Animated project title" />
 
 <p>
-  <strong>An Autonomous Agentic RAG System for Technical Knowledge Retrieval</strong>
+  <strong>From Research Papers to Intelligent Knowledge Retrieval</strong>
 </p>
 
 <p>
-  Building an intelligent document retrieval and reasoning system
-  through modular data engineering, semantic search and autonomous agents.
+  An enterprise-oriented Agentic Retrieval-Augmented Generation system
+  built through data engineering, semantic search, vector databases,
+  and autonomous AI workflows.
 </p>
 
 <br/>
@@ -18,131 +19,144 @@
 <a href="https://github.com/Chaman4211/enterprise-agentic-rag-system">
   <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/>
 </a>
-<img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/Track-B%20%7C%20Autonomous%20Agents-8957E5?style=for-the-badge" alt="Track B"/>
-<img src="https://img.shields.io/badge/Week%201-Data%20Foundation-238636?style=for-the-badge" alt="Week 1"/>
-<img src="https://img.shields.io/badge/Tests-10%20Passed-success?style=for-the-badge&logo=pytest" alt="Tests"/>
+<img src="https://img.shields.io/badge/Parallax%20Labs-Cohort%204-8957E5?style=for-the-badge" alt="Parallax Labs Cohort 4"/>
+<img src="https://img.shields.io/badge/Track-B%20%7C%20Autonomous%20Agents-6F42C1?style=for-the-badge" alt="Track B"/>
+<img src="https://img.shields.io/badge/Week%202-Completed-238636?style=for-the-badge" alt="Week 2 Completed"/>
+<img src="https://img.shields.io/badge/Tests-32%20Passed-success?style=for-the-badge&logo=pytest" alt="Tests"/>
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:58A6FF,100:8957E5" width="100%" alt="Gradient divider"/>
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-CPU%20Compatible-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/)
+[![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Database-FF6F61?style=flat-square)](https://www.trychroma.com/)
+[![Sentence Transformers](https://img.shields.io/badge/Sentence--Transformers-Embeddings-8A2BE2?style=flat-square)](https://www.sbert.net/)
+[![Linux](https://img.shields.io/badge/Linux-Ubuntu-FCC624?style=flat-square&logo=linux&logoColor=black)](https://ubuntu.com/)
+[![GitHub](https://img.shields.io/badge/Version%20Control-Git-181717?style=flat-square&logo=git&logoColor=white)](https://git-scm.com/)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:58A6FF,50:8957E5,100:22C55E" width="100%" alt="Gradient divider"/>
 
 </div>
 
 ## 🧠 01. Project Overview
 
-The **Enterprise Agentic RAG System** is an AI engineering project developed as part of the **Parallax Labs Cohort 4 — AI/ML Engineer Internship, Track B: Autonomous Agentic Systems**.
+The **Enterprise Agentic RAG System** is an AI engineering project developed as part of **Parallax Labs Cohort 4 — AI/ML Engineer Internship, Track B: Autonomous Agentic Systems**.
 
-The objective is to develop an enterprise-oriented Retrieval-Augmented Generation system capable of retrieving relevant information from a technical knowledge base and executing multi-step agent workflows.
+The objective is to build an enterprise-oriented Retrieval-Augmented Generation system capable of retrieving relevant information from a technical knowledge base and progressively supporting multi-step agent workflows.
 
-Unlike a basic question-answering application, the planned system will combine document processing, semantic retrieval, tool execution, stateful agent orchestration and retrieval correction.
+Instead of depending entirely on a language model's internal knowledge, the system uses an external document knowledge base to retrieve relevant information and provide grounded context for AI-generated responses.
 
-Development follows a six-week engineering roadmap. Week 1 establishes the data foundation required by the later components.
+The development follows a six-week engineering roadmap, beginning with large-scale data ingestion and progressing toward semantic retrieval, agent orchestration, evaluation, and deployment.
 
-## 🎯 02. Project Objectives
+### 🎯 Core Objectives
 
 - Build a reliable technical-document ingestion pipeline.
-- Process and validate more than 5,000 real-world documents.
-- Generate clean, structured data for downstream AI processing.
-- Implement semantic chunking and vector indexing.
+- Process thousands of research papers.
+- Implement token-aware semantic document chunking.
+- Generate dense vector embeddings.
+- Store and retrieve document chunks using ChromaDB.
+- Benchmark embedding and retrieval performance.
 - Develop autonomous workflows using LangGraph.
 - Implement retrieval correction and query reformulation.
 - Expose the system through a streaming FastAPI service.
-- Evaluate retrieval quality, response fidelity and system performance.
+- Evaluate retrieval quality, response fidelity, and system performance.
 
-## 📊 03. Week 1 — Data Foundation
+---
+
+## 📊 02. Project at a Glance
 
 <div align="center">
 
-| Metric | Verified Result |
-| :--- | ---: |
-| 📚 Raw documents collected | **6,000** |
-| 🆔 Unique raw document IDs | **6,000** |
-| ✅ Processed documents | **5,965** |
-| 🧹 Filtered documents | **35** |
-| ❌ Invalid JSON records | **0** |
-| 🌐 Non-English processed records | **0** |
-| 🧪 Unit tests passed | **10 / 10** |
+| Metric | Current Result |
+|:---|---:|
+| Research documents processed | **5,965** |
+| Total corpus tokens | **94.58 Million** |
+| Indexed document chunks | **527,103** |
+| Embedding dimensions | **384** |
+| Embedding throughput | **33.94 chunks/sec** |
+| Average retrieval latency | **8.42 ms** |
+| Retrieval P95 latency | **10.41 ms** |
+| Automated tests passing | **32** |
+
+<br/>
+
+<img src="https://img.shields.io/badge/5,965-Documents-2563EB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/527K+-Vector%20Chunks-7C3AED?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/8.42%20ms-Retrieval%20Latency-16A34A?style=for-the-badge"/>
 
 </div>
 
-### Dataset Source
+---
 
-**Common Pile — arXiv Papers**
+## 🗺️ 03. Development Progress
 
-[Explore the Hugging Face dataset](https://huggingface.co/datasets/common-pile/arxiv_papers)
+<div align="center">
 
-| Property | Details |
-| :--- | :--- |
-| Provider | Hugging Face Datasets |
-| Dataset | `common-pile/arxiv_papers` |
-| Split | `train` |
-| Collection method | Authenticated streaming |
-| Raw format | Compressed JSONL |
-| Processed format | Apache Parquet |
-| Raw records | 6,000 |
-| Accepted records | 5,965 |
+| Milestone | Status |
+|:---|:---:|
+| Week 01 — Data Ingestion & Preprocessing | ✅ Completed |
+| Week 02 — Semantic Chunking & Vector Database | ✅ Completed |
+| Week 03 — Retrieval & RAG Development | ⏳ Upcoming |
+| Week 04 — Agentic Workflows & LangGraph | ⏳ Upcoming |
+| Week 05 — Evaluation & Optimization | ⏳ Upcoming |
+| Week 06 — Integration & Deployment | ⏳ Upcoming |
 
-The original document text and available metadata are preserved during processing.
+<br/>
 
-### Dataset Processing Results
+<img src="https://progress-bar.dev/33/?scale=6&title=Development%20Milestones&width=550&color=238636&suffix=%25" alt="Development milestone progress"/>
 
-```text
-Raw documents                 6,000
-                              -------
-Accepted documents            5,965
-Filtered documents               35
-Invalid JSON records              0
-Duplicate processed IDs           0
-Missing text                       0
-Non-English records                0
-Invalid metadata                   0
-                              -------
-Validated corpus              5,965
-```
+<sub>Two of six development milestones completed.</sub>
+
+</div>
+
+---
 
 ## 🏗️ 04. System Architecture
 
-### Current Implementation — Week 1
+### Current Implementation — Weeks 1 and 2
 
-The first milestone implements the data ingestion, preprocessing, storage and validation pipeline.
+The current implementation includes document collection, preprocessing, token-aware chunking, embedding generation, persistent vector storage, and semantic retrieval.
 
 ```mermaid
 flowchart TD
-    A["Hugging Face arXiv Dataset"] --> B["Authenticated Streaming"]
-    B --> C["Raw JSONL Archive"]
-    C --> D["Text Cleaning Module"]
-    D --> E["Unicode Normalization"]
-    E --> F["HTML and Whitespace Cleanup"]
-    F --> G["Language Detection"]
-    G --> H["English and Length Filtering"]
-    H --> I["Metadata Preservation"]
-    I --> J["Parquet Dataset"]
-    J --> K["Dataset Validation"]
-    K --> L["Validated Corpus"]
+    A["📚 Hugging Face arXiv Dataset"] --> B["Authenticated Streaming"]
+    B --> C["Raw Research Documents"]
+    C --> D["🧹 Data Preprocessing"]
+    D --> E["Validated Parquet Dataset"]
+    E --> F["✂️ Token-Aware Chunking"]
+    F --> G["🧠 Sentence Transformer Embeddings"]
+    G --> H[("🗄️ ChromaDB")]
+    H --> I["🔎 Semantic Retrieval"]
+    I --> J["Relevant Document Chunks"]
 
-    M["Unit Tests"] --> D
+    K["Automated Tests"] --> D
+    K --> F
+    K --> I
 
     style A fill:#1d4ed8,color:#fff
-    style L fill:#15803d,color:#fff
+    style E fill:#164e63,color:#fff
+    style H fill:#6d28d9,color:#fff
+    style J fill:#15803d,color:#fff
 ```
 
 ### Target Architecture — Complete Six-Week System
 
-The following diagram describes the planned architecture, not the current Week 1 implementation.
+The following architecture represents the planned end-to-end system. Agent orchestration, corrective retrieval, and the streaming API are future milestones, not completed features.
 
 <div align="center">
 
-<img src="docs/architecture-flow.svg" width="100%" alt="Animated architecture diagram showing the planned enterprise agentic RAG data and agent workflow"/>
+<img src="docs/architecture-flow.svg" width="100%" alt="Enterprise Agentic RAG architecture"/>
 
-<sub>Animated target architecture — planned across the six-week roadmap; only the Week 1 data foundation is currently implemented.</sub>
+<sub>Target architecture across the six-week development roadmap.</sub>
 
 </div>
 
 ```mermaid
 flowchart TD
     A["Technical Knowledge Sources"] --> B["Document Ingestion"]
-    B --> C["Preprocessing and Chunking"]
+    B --> C["Preprocessing & Chunking"]
     C --> D["Embedding Generation"]
     D --> E[("ChromaDB Vector Store")]
 
@@ -150,7 +164,7 @@ flowchart TD
     G --> H["Query Analysis"]
     H --> I["Semantic Retrieval"]
     I --> E
-    E --> J["Retrieved Documents"]
+    E --> J["Retrieved Context"]
 
     J --> K{"Retrieval Quality"}
     K -->|Relevant| L["LLM Response Generation"]
@@ -160,46 +174,72 @@ flowchart TD
     G --> N["Tool Execution"]
     L --> O["FastAPI Streaming"]
     N --> O
-    O --> P["Final Response"]
+    O --> P["Grounded AI Response"]
 
     style G fill:#6d28d9,color:#fff
     style E fill:#0369a1,color:#fff
     style P fill:#15803d,color:#fff
 ```
 
-## 🧹 05. Data Preprocessing
+---
 
-The preprocessing implementation is located in:
+## 📚 05. Week 1 — Data Ingestion & Preprocessing
 
-`src/preprocessing.py`
+<details open>
+<summary><strong>✅ Completed — Data Foundation</strong></summary>
 
-### Implemented Functions
+### Dataset Source
 
-| Function | Responsibility |
-| :--- | :--- |
-| `clean_text()` | Normalize and clean document text |
-| `detect_language()` | Identify document language |
-| `preprocess_record()` | Validate, filter and prepare document records |
+**Common Pile — arXiv Papers**
 
-### Processing Operations
+[Explore the Hugging Face dataset](https://huggingface.co/datasets/common-pile/arxiv_papers)
 
-1. **Unicode normalization:** Applies NFKC normalization.
-2. **HTML cleaning:** Removes HTML markup.
-3. **Script and style removal:** Removes script and style elements.
-4. **Whitespace normalization:** Removes unnecessary whitespace.
-5. **Language detection:** Detects document language.
-6. **Language filtering:** Retains English-language records.
-7. **Length filtering:** Rejects text shorter than 200 characters.
-8. **Metadata preservation:** Retains original document metadata.
+| Property | Details |
+|:---|:---|
+| Provider | Hugging Face Datasets |
+| Dataset | `common-pile/arxiv_papers` |
+| Split | `train` |
+| Collection method | Authenticated streaming |
+| Raw format | Compressed JSONL |
+| Processed format | Apache Parquet |
+| Raw records | 6,000 |
+| Accepted records | 5,965 |
+
+### Processing Results
+
+| Metric | Verified Result |
+|:---|---:|
+| Raw documents collected | 6,000 |
+| Unique raw document IDs | 6,000 |
+| Processed documents | 5,965 |
+| Filtered documents | 35 |
+| Invalid JSON records | 0 |
+| Duplicate processed IDs | 0 |
+| Missing text records | 0 |
+| Non-English processed records | 0 |
+
+### Preprocessing Implementation
+
+Location: `src/preprocessing.py`
+
+Implemented operations:
+
+1. Unicode normalization using NFKC.
+2. HTML markup removal.
+3. Script and style element removal.
+4. Whitespace normalization.
+5. English-language detection and filtering.
+6. Minimum text length validation.
+7. Metadata preservation.
+8. Efficient language detection using the first 1,000 characters.
+9. Preservation of LaTeX mathematical expressions.
 
 ### Output Dataset
 
 `data/processed/clean_corpus.parquet`
 
-The processed Parquet file contains:
-
 | Column | Description |
-| :--- | :--- |
+|:---|:---|
 | `id` | Original document ID |
 | `text` | Cleaned document text |
 | `source` | Document source |
@@ -211,127 +251,293 @@ The processed Parquet file contains:
 | `url` | Available document URL |
 | `metadata_json` | Preserved metadata |
 
-## 🧪 06. Testing and Validation
+</details>
 
-### Unit Testing
+---
 
-Test implementation:
+## ✂️ 06. Week 2 — Semantic Chunking & Vector Database
 
-`tests/test_preprocessing.py`
+<details open>
+<summary><strong>✅ Completed — Full Corpus Indexed and Benchmarked</strong></summary>
 
-Run the tests:
+Week 2 transforms the processed research corpus into a searchable vector database.
 
-```bash
-python3 -m pytest -v
-```
+### 6.1 Token Length Profiling
 
-**Latest verified result: 10 tests passed.**
+Before chunking, all 5,965 documents were analyzed using the tokenizer associated with:
 
-Test coverage includes:
+[all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 
-- HTML removal.
-- Whitespace normalization.
-- Unicode normalization.
-- Empty input handling.
-- Invalid input handling.
-- English-language detection.
-- Metadata preservation.
-- Missing ID rejection.
-- Short-text rejection.
-- Non-English document rejection.
+| Metric | Result |
+|:---|---:|
+| Documents profiled | 5,965 |
+| Total tokens | 94,581,270 |
+| Mean tokens/document | 15,856 |
+| Median tokens/document | 10,696 |
+| 75th percentile | 18,711 |
+| 90th percentile | 30,372 |
+| 95th percentile | 42,686 |
+| 99th percentile | 76,110 |
+| Maximum document length | 1,097,032 |
+| Documents exceeding 254 content tokens | 99.93% |
 
-### Dataset Validation
+This profiling established the need for token-aware chunking rather than embedding entire documents directly.
 
-Validation implementation:
+### 6.2 Token-Aware Chunking
 
-`scripts/validate_dataset.py`
+Implementation: `src/chunking.py`
 
-Run:
+| Configuration | Value |
+|:---|---:|
+| Chunk size | 220 tokens |
+| Overlap | 40 tokens |
+| Stride | 180 tokens |
+| Model maximum sequence length | 256 tokens |
+| Embedding dimension | 384 |
 
-```bash
-python3 scripts/validate_dataset.py
-```
+Features:
 
-Latest validation:
+- Hugging Face fast-tokenizer offsets.
+- Original-text slicing instead of decoding token IDs.
+- Overlapping chunks for contextual continuity.
+- Preservation of punctuation and mathematical expressions.
+- Chunk indices and token-position metadata.
+- Token-count validation.
 
-| Validation | Result |
-| :--- | :--- |
-| Expected Parquet columns | PASS |
-| Total record count | 5,965 |
-| Unique IDs | 5,965 |
-| Missing text | 0 |
-| Non-English records | 0 |
-| Missing metadata | 0 |
-| Invalid metadata JSON | 0 |
+### 6.3 Embedding Generation
 
-<details>
-<summary><strong>View verified Parquet schema</strong></summary>
+Model: `sentence-transformers/all-MiniLM-L6-v2`
+
+| Benchmark Metric | Result |
+|:---|---:|
+| Benchmark sample | 256 chunks |
+| Warm-up chunks | 8 |
+| Measured chunks | 248 |
+| Batch size | 16 |
+| Embedding duration | 7.31 seconds |
+| Throughput | 33.94 chunks/second |
+| Estimated full-corpus embedding time | ~4.31 hours |
+
+The full-corpus time is an extrapolation from the sample benchmark, not a measured end-to-end ingestion duration.
+
+### 6.4 Persistent Vector Database
+
+Implementation: `src/vector_store.py`
+
+| Configuration | Value |
+|:---|:---|
+| Vector database | ChromaDB |
+| Collection | `agentic_rag_chunks` |
+| Distance metric | Cosine |
+| Embedding model | all-MiniLM-L6-v2 |
+| Embedding dimensions | 384 |
+| Persistence | Local disk |
+| Database directory | `data/chroma/` |
+
+### 6.5 Full Corpus Ingestion
+
+Implementation: `scripts/ingest_vector_store.py`
+
+### 📊 Verified Ingestion Results
+
+| Metric | Result |
+|:---|---:|
+| Documents ingested | 5,965 |
+| Total indexed chunks | 527,103 |
+| Average chunks/document | 88.37 |
+| Ingestion duration | 300.11 minutes |
+| Peak resident memory | ~2.19 GB |
+| Peak memory high-water mark | ~2.32 GB |
+
+The complete corpus was embedded and persisted in ChromaDB.
+
+**Reliability features:**
+
+- Deterministic chunk identifiers.
+- Resumable ingestion.
+- Progress checkpointing.
+- Atomic checkpoint writes.
+- Recovery from partially ingested documents.
+- Persistent vector storage.
+
+### 6.6 Semantic Retrieval
+
+Implementation: `src/retrieval.py`
+
+The retrieval pipeline:
+
+1. Accepts a natural-language query.
+2. Generates a query embedding using the same embedding model.
+3. Searches ChromaDB using cosine distance.
+4. Returns the most relevant document chunks.
+5. Includes document metadata, distance, and similarity score.
+
+Similarity is calculated as `1 - distance`. It is a ranking signal, not a calibrated probability.
+
+### 6.7 Retrieval Benchmark
+
+Ten research-related queries were evaluated with three repetitions each.
+
+| Metric | Result |
+|:---|---:|
+| Unique queries | 10 |
+| Repetitions per query | 3 |
+| Measured operations | 30 |
+| Average latency | 8.42 ms |
+| Median latency | 8.12 ms |
+| P95 latency | 10.41 ms |
+| Minimum latency | 7.20 ms |
+| Maximum latency | 10.45 ms |
+
+Latency includes query embedding and ChromaDB search. Model loading is excluded.
+
+**Retrieval observations:**
+
+- Stronger matches were observed for reinforcement learning, speech recognition, word embeddings, information retrieval, and question answering.
+- Transformer self-attention and graph neural network queries showed weaker results.
+- GAN-related retrieval needs improvement.
+- Some queries returned multiple chunks from the same document.
+
+These results establish a baseline for future retrieval optimization.
+
+### 6.8 Week 2 Deliverables
 
 ```text
-id: string
-text: string
-source: string
-created: string
-added: string
-language: string
-text_length: int64
-license: string
-url: string
-metadata_json: string
+src/
+├── preprocessing.py
+├── chunking.py
+├── vector_store.py
+└── retrieval.py
+
+scripts/
+├── profile_token_lengths.py
+├── estimate_chunks.py
+├── benchmark_embeddings.py
+├── ingest_vector_store.py
+├── test_live_retrieval.py
+└── benchmark_retrieval.py
+
+tests/
+├── test_preprocessing.py
+├── test_chunking.py
+└── test_retrieval.py
 ```
 
 </details>
 
-## 💻 07. Development Environment
+---
 
-### System Requirements
+## ⚡ 07. Performance Benchmarks
 
-| Component | Requirement |
-| :--- | :--- |
-| Operating System | Ubuntu Linux |
-| Python | 3.11 |
-| Environment manager | Conda |
-| Package manager | pip |
-| Version control | Git |
-| Dataset access | Hugging Face account |
-| Hardware | CPU execution supported |
+<div align="center">
 
-### Verified Environment
+### Vector Database
 
-| Component | Installed Configuration |
-| :--- | :--- |
+<img src="https://img.shields.io/badge/527,103-Indexed%20Chunks-2563EB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/5,965-Research%20Documents-7C3AED?style=for-the-badge"/>
+
+### Retrieval Performance
+
+<img src="https://img.shields.io/badge/8.42%20ms-Average%20Latency-16A34A?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/10.41%20ms-P95%20Latency-0891B2?style=for-the-badge"/>
+
+### Embedding Performance
+
+<img src="https://img.shields.io/badge/33.94-Chunks%2FSecond-F59E0B?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/384-Embedding%20Dimensions-9333EA?style=for-the-badge"/>
+
+</div>
+
+### Execution Environment
+
+- Python 3.11.
+- CPU-compatible PyTorch.
+- Sentence Transformers.
+- ChromaDB.
+- Ubuntu Linux.
+
+The pipeline and benchmarks were executed successfully without requiring dedicated GPU acceleration.
+
+---
+
+## 🧪 08. Testing & Validation
+
+The project contains automated tests for preprocessing, chunking, and retrieval.
+
+### Latest Complete Test Run
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/32-Tests%20Passed-238636?style=for-the-badge&logo=pytest&logoColor=white"/>
+
+```text
+32 passed in 9.46s
+```
+
+</div>
+
+Run the complete test suite:
+
+```bash
+python -m pytest -q
+```
+
+Run with detailed output:
+
+```bash
+python -m pytest -v
+```
+
+Compile project modules:
+
+```bash
+python -m compileall -q src scripts tests
+```
+
+### Test Coverage
+
+- Text preprocessing and validation.
+- Unicode and HTML handling.
+- Metadata preservation.
+- Token-aware chunk generation.
+- Overlap and token offsets.
+- Empty and invalid chunk inputs.
+- Semantic retrieval validation.
+- Query and top-k validation.
+
+---
+
+## 💻 09. Development Environment
+
+### Verified Dependencies
+
+| Component | Version |
+|:---|:---|
 | Python | 3.11.18 |
 | PyTorch | 2.15.0+cpu |
 | pandas | 3.1.1 |
 | PyArrow | 26.0.1 |
-| sentence-transformers | 6.3.0 |
+| Sentence Transformers | 6.3.0 |
 | ChromaDB | 1.5.9 |
-| LangGraph | 1.2.23 |
-| Hugging Face Datasets | 5.2.0 |
-| CUDA availability | False |
-| Execution mode | CPU-only |
+| Transformers | 5.23.0 |
+| Pytest | 9.2.0 |
 
-**Hardware note:** The current development environment uses CPU-only PyTorch. CUDA and GPU acceleration are not available in this environment. The Week 1 collection and preprocessing pipeline has been executed successfully using CPU processing.
+The project uses Conda for environment management and CPU-compatible machine learning dependencies.
 
-### Environment Verification
+---
 
-Run:
+## 🚀 10. Getting Started
 
-```bash
-python3 scripts/verify_env.py
-```
+### Prerequisites
 
-Check installed dependencies:
+- Ubuntu/Linux or another supported operating system.
+- Python 3.11.
+- Conda.
+- Git.
+- Hugging Face account for dataset collection.
+- Sufficient disk space for local datasets and vector storage.
 
-```bash
-python3 -m pip check
-```
-
-## 🚀 08. Installation and Local Setup
-
-The following instructions describe how to set up the project on Ubuntu Linux.
-
-### Step 1 — Clone the Repository
+### 10.1 Clone the Repository
 
 ```bash
 git clone https://github.com/Chaman4211/enterprise-agentic-rag-system.git
@@ -339,7 +545,7 @@ git clone https://github.com/Chaman4211/enterprise-agentic-rag-system.git
 cd enterprise-agentic-rag-system
 ```
 
-### Step 2 — Create the Conda Environment
+### 10.2 Create the Environment
 
 ```bash
 conda create -n agentic-rag python=3.11 -y
@@ -347,73 +553,82 @@ conda create -n agentic-rag python=3.11 -y
 conda activate agentic-rag
 ```
 
-### Step 3 — Install Dependencies
+### 10.3 Install Dependencies
 
 ```bash
-python3 -m pip install -r requirements.txt
+python -m pip install --upgrade pip
+
+python -m pip install -r requirements.txt
 ```
 
-### Step 4 — Verify Environment
+### 10.4 Run Tests
 
 ```bash
-python3 scripts/verify_env.py
-
-python3 -m pip check
+python -m pytest -q
 ```
 
-### Step 5 — Authenticate with Hugging Face
+### 10.5 Explore the Week 2 Pipeline
 
-If authentication is required:
+Profile token lengths:
+
+```bash
+python scripts/profile_token_lengths.py
+```
+
+Estimate chunk counts:
+
+```bash
+python scripts/estimate_chunks.py
+```
+
+Benchmark embeddings:
+
+```bash
+python scripts/benchmark_embeddings.py
+```
+
+Run semantic retrieval:
+
+```bash
+python scripts/test_live_retrieval.py
+```
+
+Benchmark retrieval:
+
+```bash
+python scripts/benchmark_retrieval.py
+```
+
+**Important:** Full-corpus ingestion has already been completed in the development environment. The local ChromaDB database is stored in `data/chroma/` and is excluded from Git. Do not rerun full ingestion unnecessarily.
+
+### 10.6 Dataset Collection and Preprocessing
+
+For a fresh environment, the original Week 1 pipeline includes:
 
 ```bash
 hf auth login
 ```
 
-### Step 6 — Collect Documents
-
 ```bash
-python3 scripts/collect_papers.py
+python scripts/collect_papers.py
+python scripts/preprocess_dataset.py
+python scripts/validate_dataset.py
 ```
 
-Expected output:
+The dataset collection and preprocessing scripts are retained as part of the original pipeline.
 
-`data/raw/arxiv_papers.jsonl.gz`
+---
 
-The collector uses authenticated streaming and checkpointing to support collection progress.
-
-### Step 7 — Preprocess Documents
-
-```bash
-python3 scripts/preprocess_dataset.py
-```
-
-Expected output:
-
-`data/processed/clean_corpus.parquet`
-
-### Step 8 — Validate the Dataset
-
-```bash
-python3 scripts/validate_dataset.py
-```
-
-### Step 9 — Run Unit Tests
-
-```bash
-python3 -m pytest -v
-```
-
-## 📁 09. Repository Structure
+## 📁 11. Repository Structure
 
 ```text
 enterprise-agentic-rag-system/
 │
 ├── data/
 │   ├── raw/
-│   │   └── .gitkeep
-│   │
-│   └── processed/
-│       └── .gitkeep
+│   ├── processed/
+│   │   └── clean_corpus.parquet
+│   └── chroma/                     # Local, Git-ignored database
 │
 ├── scripts/
 │   ├── collect_papers.py
@@ -421,18 +636,30 @@ enterprise-agentic-rag-system/
 │   ├── ingest_dataset.py
 │   ├── preprocess_dataset.py
 │   ├── validate_dataset.py
-│   └── verify_env.py
+│   ├── verify_env.py
+│   ├── profile_token_lengths.py
+│   ├── estimate_chunks.py
+│   ├── benchmark_embeddings.py
+│   ├── ingest_vector_store.py
+│   ├── test_live_retrieval.py
+│   └── benchmark_retrieval.py
 │
 ├── src/
 │   ├── __init__.py
-│   └── preprocessing.py
+│   ├── preprocessing.py
+│   ├── chunking.py
+│   ├── vector_store.py
+│   └── retrieval.py
 │
 ├── tests/
 │   ├── __init__.py
-│   └── test_preprocessing.py
+│   ├── test_preprocessing.py
+│   ├── test_chunking.py
+│   └── test_retrieval.py
 │
 ├── notebooks/
 ├── docs/
+│   └── architecture-flow.svg
 │
 ├── .env.example
 ├── .gitignore
@@ -440,93 +667,138 @@ enterprise-agentic-rag-system/
 └── README.md
 ```
 
-Raw datasets, processed datasets, environment secrets and generated artifacts are excluded from Git using `.gitignore`.
+*Generated datasets, vector databases, checkpoints, and benchmark reports are kept locally and excluded from Git.*
 
-## 🛠️ 10. Technology Stack
+---
 
-| Technology | Purpose |
-| :--- | :--- |
-| Python | Core development |
-| Hugging Face Datasets | Dataset streaming |
-| Hugging Face Hub | Dataset access and authentication |
-| pandas | Data handling |
-| PyArrow | Parquet storage |
-| BeautifulSoup | HTML cleaning |
-| langdetect | Language detection |
-| pytest | Automated testing |
-| PyTorch | Machine learning foundation |
-| ChromaDB | Planned vector storage |
-| LangGraph | Planned agent orchestration |
-| FastAPI | Planned API service |
-
-## 🛡️ 11. Data Integrity and Licensing
-
-The source dataset contains multiple license types.
-
-The preprocessing pipeline preserves the original license information in the document metadata.
-
-The collected corpus must not be considered entirely public domain.
-
-Before redistribution, publication or reuse of an individual document, its original license must be checked.
-
-The following project practices are used:
-
-- Raw data is stored locally.
-- Processed data is stored locally.
-- Dataset files are excluded from Git.
-- Environment secrets are excluded from Git.
-- Original document metadata is preserved.
-- Dataset validation is performed before downstream use.
-
-## 🗺️ 12. Six-Week Development Roadmap
-
-| Week | Milestone | Planned Deliverables |
-| :--- | :--- | :--- |
-| 01 | Data Foundation | Ingestion, cleaning, tests and validation |
-| 02 | Semantic Chunking, Embeddings & Vector DB | Semantic chunking and embedding generation |
-| 03 | LLM Integration, Structured Outputs & Function Calling | ChromaDB indexing and retrieval |
-| 04 | Autonomous Agent Workflows & LangGraph State Machine | LangGraph, tool calling and state management |
-| 05 | Streaming API (FastAPI) & System Evaluation | Retrieval evaluation and query rewriting |
-| 06 | System Architecture, Benchmarks & Launch | FastAPI streaming, telemetry and benchmarks |
-
-### Week 1 — Completed
-
-- [x] Git repository initialized.
-- [x] Python 3.11 environment configured.
-- [x] Dependencies installed and checked.
-- [x] Environment verification script created.
-- [x] 6,000 unique documents collected.
-- [x] Modular preprocessing functions implemented.
-- [x] English-language filtering implemented.
-- [x] Unit tests created and passed.
-- [x] 5,965 processed records generated.
-- [x] Parquet dataset validated.
-- [x] README documentation prepared.
-
-### Upcoming Milestones
-
-- [ ] Semantic document chunking.
-- [ ] Embedding generation.
-- [ ] ChromaDB vector indexing.
-- [ ] LangGraph state machine.
-- [ ] Native tool and function calling.
-- [ ] Corrective RAG and query reformulation.
-- [ ] FastAPI streaming endpoints.
-- [ ] Evaluation and monitoring.
-
-> **Implementation status:** Only the Week 1 data foundation is currently completed. Future roadmap components are planned and will be added incrementally.
-
-## 👨‍💻 13. Developer
+## 🛠️ 12. Technology Stack
 
 <div align="center">
 
-**Chaman Afzaal**
+| Category | Technology |
+|:---|:---|
+| Programming Language | Python 3.11 |
+| Data Engineering | Pandas, PyArrow |
+| Dataset Ingestion | Hugging Face Datasets |
+| NLP & Tokenization | Hugging Face Transformers |
+| Deep Learning | PyTorch |
+| Embeddings | Sentence Transformers |
+| Vector Database | ChromaDB |
+| Document Storage | Apache Parquet |
+| Testing | Pytest |
+| Environment Management | Conda |
+| Version Control | Git & GitHub |
+| Operating System | Ubuntu Linux |
 
-AI/ML Engineer Intern
+</div>
+
+### Planned Technologies
+
+| Technology | Planned Purpose |
+|:---|:---|
+| LangGraph | Stateful agent orchestration |
+| LLM Integration | Context-aware response generation |
+| Function Calling | Tool execution |
+| FastAPI | Streaming API |
+| Evaluation Framework | Retrieval and response evaluation |
+
+---
+
+## 🔐 13. Data Integrity & Licensing
+
+The source dataset contains multiple license types. The collected corpus must not be considered entirely public domain.
+
+The preprocessing pipeline preserves original license information in document metadata.
+
+Before redistributing or publishing an individual document, its original license must be checked.
+
+Project data-handling practices:
+
+- Raw datasets are stored locally.
+- Processed datasets are stored locally.
+- Vector database files are excluded from Git.
+- Environment secrets are excluded from Git.
+- Original document metadata is preserved.
+- Dataset validation is performed before downstream processing.
+
+---
+
+## 🗺️ 14. Six-Week Engineering Roadmap
+
+| Week | Milestone | Main Deliverables | Status |
+|:---:|:---|:---|:---:|
+| 01 | Data Foundation | Ingestion, preprocessing, validation | ✅ |
+| 02 | Semantic Chunking & Vector DB | Chunking, embeddings, ChromaDB, retrieval baseline | ✅ |
+| 03 | Retrieval & RAG Development | Retrieval improvements and RAG pipeline | ⏳ |
+| 04 | Agentic Workflows | LangGraph, tool calling, state management | ⏳ |
+| 05 | Evaluation & Optimization | Query rewriting, quality evaluation, performance | ⏳ |
+| 06 | Integration & Deployment | FastAPI, telemetry, final benchmarks and launch | ⏳ |
+
+### Completed Work
+
+- [x] Git repository initialized.
+- [x] Python 3.11 environment configured.
+- [x] Dataset collection implemented.
+- [x] 6,000 research papers collected.
+- [x] Data preprocessing implemented.
+- [x] 5,965 documents validated.
+- [x] Token length profiling completed.
+- [x] Token-aware chunking implemented.
+- [x] Embedding benchmark completed.
+- [x] ChromaDB integration implemented.
+- [x] 527,103 chunks indexed.
+- [x] Resumable ingestion and checkpoint recovery implemented.
+- [x] Semantic retrieval implemented.
+- [x] Ten-query retrieval benchmark completed.
+- [x] 32 automated tests passing.
+
+### Upcoming Work
+
+- [ ] Improve retrieval relevance.
+- [ ] Implement RAG response generation.
+- [ ] Integrate LLMs.
+- [ ] Build LangGraph agent workflows.
+- [ ] Implement tool and function calling.
+- [ ] Add corrective retrieval and query reformulation.
+- [ ] Develop FastAPI streaming endpoints.
+- [ ] Evaluate response quality and system reliability.
+- [ ] Complete final integration and deployment.
+
+---
+
+## 🧩 15. Engineering Principles
+
+| Principle | Implementation |
+|:---|:---|
+| Reproducibility | Deterministic chunk identifiers and repeatable benchmarks |
+| Scalability | Batch processing and persistent vector storage |
+| Reliability | Checkpoint-based ingestion and recovery |
+| Observability | Latency, throughput, and memory measurements |
+| Maintainability | Modular source code and automated tests |
+| Resource Awareness | CPU-compatible and memory-conscious execution |
+| Data Integrity | Metadata preservation and validation |
+
+---
+
+## 👨‍💻 16. Developer
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1200&color=58A6FF&center=true&vCenter=true&width=650&height=45&lines=Chaman+Afzaal;Software+Engineering+Graduate;Data+Engineering+%26+AI+Enthusiast" alt="Animated developer introduction"/>
+
+### Chaman Afzaal
+
+**Software Engineering Graduate | Data Engineering & AI Enthusiast**
+
+Interested in building practical AI systems, data pipelines, semantic search, and intelligent applications.
+
+<br/>
 
 <a href="https://github.com/Chaman4211">
   <img src="https://img.shields.io/badge/GitHub-Chaman4211-181717?style=for-the-badge&logo=github" alt="GitHub Profile"/>
 </a>
+
+<br/><br/>
 
 **Program:** Parallax Labs Cohort 4
 
@@ -536,10 +808,22 @@ AI/ML Engineer Intern
 
 ---
 
+## 📜 License
+
+This project is developed for educational, research, and engineering purposes.
+
+A formal repository license will be added when the project licensing is finalized.
+
+---
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1D4ED8,100:6D28D9&height=120&section=footer" width="100%" alt="Project footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:1D4ED8,100:8957E5&height=150&section=footer&text=Building%20Intelligent%20Systems&fontSize=27&fontColor=ffffff&animation=fadeIn&fontAlignY=65" width="100%" alt="Animated project footer"/>
 
-**Building intelligent systems, one milestone at a time.** ⚡
+### From Raw Research Data to Autonomous Intelligence.
+
+**One milestone at a time.**
+
+<img src="https://img.shields.io/badge/BUILT%20WITH-PASSION%20%26%20ENGINEERING-2563EB?style=for-the-badge"/>
 
 </div>
