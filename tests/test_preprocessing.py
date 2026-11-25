@@ -88,3 +88,44 @@ def test_preprocess_record_rejects_non_english():
     }
 
     assert preprocess_record(record) is None
+
+
+
+def test_clean_text_preserves_latex_formulas():
+    text = (
+        r"Einstein equation: $E = mc^2$. "
+        r"Inline formula: \(a^2 + b^2 = c^2\). "
+        r"Display formula: \[x^2 + y^2 = z^2\]."
+    )
+
+    cleaned = clean_text(text)
+
+    assert "$E = mc^2$" in cleaned
+    assert r"\(a^2 + b^2 = c^2\)" in cleaned
+    assert r"\[x^2 + y^2 = z^2\]" in cleaned
+
+
+def test_clean_text_preserves_latex_inside_html():
+    text = r"<p>Equation: <span>$\alpha + \beta = \gamma$</span></p>"
+
+    cleaned = clean_text(text)
+
+    assert r"$\alpha + \beta = \gamma$" in cleaned
+
+
+def test_detect_language_uses_first_1000_characters(monkeypatch):
+    import src.preprocessing as preprocessing
+
+    captured = {}
+
+    def fake_detect(text):
+        captured["text"] = text
+        return "en"
+
+    monkeypatch.setattr(preprocessing, "detect", fake_detect)
+
+    text = "A" * 1500
+
+    assert detect_language(text) == "en"
+    assert len(captured["text"]) == 1000
+    assert captured["text"] == text[:1000]

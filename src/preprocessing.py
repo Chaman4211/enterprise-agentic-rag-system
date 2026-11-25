@@ -9,6 +9,7 @@ from langdetect import DetectorFactory, LangDetectException, detect
 DetectorFactory.seed = 0
 
 MIN_TEXT_LENGTH = 200
+LANGUAGE_SAMPLE_LENGTH = 1000
 
 
 def clean_text(text: str) -> str:
@@ -44,7 +45,7 @@ def detect_language(text: str) -> str:
         return "unknown"
 
     try:
-        return detect(text)
+        return detect(text[:LANGUAGE_SAMPLE_LENGTH])
     except LangDetectException:
         return "unknown"
 
